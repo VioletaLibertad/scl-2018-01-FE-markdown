@@ -1,0 +1,16 @@
+{
+  "name": "md-links",
+  "version": "1.0.0",
+  "description": "An utility that will help you find all links on you Markdown files",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "markdown",
+    "link",
+    "explore"
+  ],
+  "author": "violeta-libertad",
+  "license": "ISC"
+}
