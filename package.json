@@ -4,7 +4,7 @@
   "description": "An utility that will help you find all links on you Markdown files",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "jest"
   },
   "keywords": [
     "markdown",
@@ -12,5 +12,10 @@
     "explore"
   ],
   "author": "violeta-libertad",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.4.0",
+    "eslint-config-google": "^0.9.1",
+    "jest": "^23.5.0"
+  }
 }
