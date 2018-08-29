@@ -1,0 +1,49 @@
+Documentacion de NodeJS
+https://nodejs.org/api/fs.html
+
+Para pasar rutas relativas a absolutas
+https://nodejs.org/docs/latest/api/path.html#path_path_resolve_paths
+
+Un caso de posible error
+https://stackoverflow.com/questions/19902828/why-does-enoent-mean-no-such-file-or-directory
+
+Modulo NPM Node Fetch: Sirve para obtener estado de links
+https://www.npmjs.com/package/node-fetch
+
+Algo con Newline
+https://stackoverflow.com/questions/8125709/javascript-how-to-split-newline
+
+Debugging con Chrome
+https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27
+
+Jest Tutorial: An async example
+https://jestjs.io/docs/en/tutorial-async
+
+Tutorial bueno sobre Jest
+https://flaviocopes.com/jest/
+
+process.argv ---> me extrae todo lo que el usuario ha escrito en la terminal
+Te devuelve rutas en un array. El primer elemento del array es la ruta de donde está node, el segundo es la ruta de donde se está ejecutando el programa los otros argumentos, son las cosas que escribe el usuario en la terminal, cada elemento desde el [2] corresponde a una palabra cuando el usuario la separa por un espacio
+
+const [, , ...args] = process.argv;
+Yo creo que las , son la separación del primer y segundo elemento, que no te sirve (dependiendo lo que quieras hacer). Y args serán los elementos que corresponden a las palabras que escribe el usuario en la terminal. Entonces con eso tú puedes obtener si el usuario quiere validar los links o no por ejemplo, porque en el readme del proyecto dice que se deben validar sólo si el usuario lo pide
+https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Operadores/Spread_operator
+
+
+
+*******MVP********
+What do i have to do:
+- function that reads what the user wrote on CLI and convert to absolute. save absolute path to variable / aside this, must also check if user's asking for validation. if true, must lead to validation function
+name: obtainUserInput
+
+
+- function that analizes if path var is file or directory. if directory, search for .md files inside
+name: pathIsFileOrDirectory
+
+
+- function that searches inside .md files and returns all links contained within. must return a Promise with an Array of Objects. 
+name: searchingForLinks
+
+
+- function that validates whether the links provided by previous function are working or not. It adds info to previous array.
+name: validateIfLinksAreWorking

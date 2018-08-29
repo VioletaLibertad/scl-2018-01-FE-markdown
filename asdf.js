@@ -4,10 +4,11 @@ const path = require('path');
 
 /* Obtain what user wrote on CLI */
 const userInput = process.argv;
+// console.log(userInput);
 let pathFromUser = userInput[2];
-console.log('prueba' + pathFromUser);
-mdLinks.obtainUserInput(pathFromUser);
-
+let absolutePath = path.resolve(`${pathFromUser}`);
+let mdFilesArray = [];
+let singleMdFile;
 // console.log('probando a ver si funciona ' + absolutePath);
 
 /* Checking if file or directory */
