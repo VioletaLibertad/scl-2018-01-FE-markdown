@@ -15,12 +15,21 @@ https://stackoverflow.com/questions/8125709/javascript-how-to-split-newline
 
 Debugging con Chrome
 https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27
+CLI: node --inspect-brk ${file name to inspect}
+then go to Chrome and write: chrome://inspect
 
 Jest Tutorial: An async example
 https://jestjs.io/docs/en/tutorial-async
 
 Tutorial bueno sobre Jest
 https://flaviocopes.com/jest/
+
+Links Fabián
+@canal Un poco de material sobre funciones, promesas y esas cosas. Practiquen harto, parte fundamental de saber javascript es dominar funciones y asincronía :
+https://medium.com/entendiendo-javascript/funciones-de-alto-orden-en-javascript-42d04769d9b5
+https://medium.com/@jmz12/callbacks-promesas-y-async-await-que-alguien-me-explique-514137cb57e2
+https://platzi.com/blog/que-es-y-como-funcionan-las-promesas-en-javascript/
+https://montalvomiguelo.com/blog/2018/07/29/entendiendo-promesas-javascript/
 
 process.argv ---> me extrae todo lo que el usuario ha escrito en la terminal
 Te devuelve rutas en un array. El primer elemento del array es la ruta de donde está node, el segundo es la ruta de donde se está ejecutando el programa los otros argumentos, son las cosas que escribe el usuario en la terminal, cada elemento desde el [2] corresponde a una palabra cuando el usuario la separa por un espacio
@@ -37,7 +46,7 @@ What do i have to do:
 name: obtainUserInput
 
 
-- function that analizes if path var is file or directory. if directory, search for .md files inside
+- function that analizes if path var is file or directory. if directory, search for .md files inside. output of this function must be either an array with .md files or a single .md file in a var
 name: pathIsFileOrDirectory
 
 
