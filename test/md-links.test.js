@@ -16,8 +16,12 @@ describe('pathIsFileOrDirectory function', () => {
   test('pathIsFileOrDirectory should return an array if directory', () => {
     expect.assertions(1);
     return mdLinks.pathIsFileOrDirectory('/home/violeta/Documentos/Laboratoria/md-links/scl-2018-01-FE-markdown/assets')
-      .then((mdFilesArray) => {
-        expect(Array.isArray(mdFilesArray)).toBe(true);
+      .then((mdFilesString) => {
+        expect(Array.isArray(mdFilesString)).toBe(true);
       });
   });
 });
+
+// npm test -- --coverage
+
+// describe('readContentOfFileOrDir to return data')

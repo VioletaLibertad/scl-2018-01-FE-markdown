@@ -7,7 +7,7 @@ const userInput = process.argv;
 // console.log(userInput);
 let pathFromUser = userInput[2];
 let absolutePath = path.resolve(`${pathFromUser}`);
-let mdFilesArray = [];
+let mdFilesString = [];
 let singleMdFile;
 // console.log('probando a ver si funciona ' + absolutePath);
 
@@ -17,11 +17,11 @@ if (stats.isDirectory() === true) {
   fs.readdir(absolutePath, 'utf-8', (err, files) => {
     if (err) throw err;
     console.log('These files can be found here: ' + files);
-    mdFilesArray = files.filter((file) => path.extname(file) === '.md');
-    console.log('Array con archivos md ' + mdFilesArray);
-    return mdFilesArray;
+    mdFilesString = files.filter((file) => path.extname(file) === '.md');
+    console.log('Array con archivos md ' + mdFilesString);
+    return mdFilesString;
   });
-  console.log(mdFilesArray);
+  console.log(mdFilesString);
 } else if (stats.isFile() === true) {
   if (path.extname(absolutePath) === '.md') {
     singleMdFile = absolutePath;
@@ -30,7 +30,7 @@ if (stats.isDirectory() === true) {
   } 
   console.log('Verificando extension del file ' + path.extname(absolutePath));
 }
-console.log(mdFilesArray);
+console.log(mdFilesString);
 
 
 
