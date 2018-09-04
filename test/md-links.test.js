@@ -6,18 +6,19 @@ describe('mdLinks module', () => {
   });
 });
 
-describe('obtainUserInput function', () => {
-  test('obtainUserInput to return an absolute path', () => {
-    expect(mdLinks.obtainUserInput('./lib/md-links.js')).toBe('/home/violeta/Documentos/Laboratoria/md-links/scl-2018-01-FE-markdown/lib/md-links.js');
-  });
-});
-
 describe('pathIsFileOrDirectory function', () => {
-  test('pathIsFileOrDirectory should return an array if directory', () => {
+  test('should return an array if directory', () => {
     expect.assertions(1);
     return mdLinks.pathIsFileOrDirectory('/home/violeta/Documentos/Laboratoria/md-links/scl-2018-01-FE-markdown/assets')
       .then((mdFilesString) => {
         expect(Array.isArray(mdFilesString)).toBe(true);
+      });
+  });
+  test('should return an absolute path if file', () => {
+    expect.assertions(1);
+    return mdLinks.pathIsFileOrDirectory('/home/violeta/Documentos/Laboratoria/md-links/scl-2018-01-FE-markdown/assets/README.md')
+      .then((mdFilesString) => {
+        expect(mdFilesString).toBe('/home/violeta/Documentos/Laboratoria/md-links/scl-2018-01-FE-markdown/assets/README.md');
       });
   });
 });
