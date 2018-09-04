@@ -37,4 +37,10 @@ The output will be like this:
 ]
 ```
 
+### About
+
+This project was developed in the context of a Front End Developer Bootcamp at @Laboratoria.
+
+© Violeta Ledezma 2018
+
 [Deploy](https://violetalibertad.github.io/scl-2018-01-FE-markdown/)
