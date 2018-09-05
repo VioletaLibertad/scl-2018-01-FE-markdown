@@ -7,7 +7,7 @@ Md-Links is a small library that allows you to visualize all the links you might
 In order to install the module, you have to type on the Terminal:
 
 ```
-npm install https://violetalibertad.github.io/scl-2018-01-FE-markdown/
+npm install https://github.com/VioletaLibertad/scl-2018-01-FE-markdown
 ```
 
 It is also required to install some dependencies listed below:
