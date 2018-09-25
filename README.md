@@ -39,7 +39,7 @@ The output will be like this:
 
 ### About
 
-This project was developed in the context of a Front End Developer Bootcamp at @Laboratoria.
+This project was developed in the context of a Front End Developer Bootcamp at @Laboratoria.The personal organization for this project was done with [Trello](https://trello.com/b/ioKhRsnx/proyecto-mdlinks)
 
 © Violeta Ledezma 2018
 
